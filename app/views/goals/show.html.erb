@@ -35,10 +35,10 @@
                 <span class="icon-btn__txt d-none d-md-inline-block">Edit</span>
               <% end %>
 
-              <button type="button" class="icon-btn">
+              <%= link_to goal_path(@goal), class: 'icon-btn', method: :delete, data: { confirm: "Are you sure you want to delete this goal?" } do %>
                 <i class="icon-btn__icon icon icon-bin mr-4"></i>
                 <span class="icon-btn__txt d-none d-md-inline-block">Delete</span>
-              </button>
+              <% end %>
             </div>
           </div>
 
